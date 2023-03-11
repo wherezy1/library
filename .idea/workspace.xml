@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="abe1e677-b9a6-4241-b213-afbef19719d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/AuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/config/MyCorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/config/MySecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/config/MyWebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/config/Oauth2ServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/dto/LoginUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/exception/MyAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/exception/MyAuthenticationEntryPointHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/expression/SGExpressionRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/interceptor/AuthorizationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/utils/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/main/resources/mapper/auth/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-auth-security/src/test/java/com/where/auth/AuthApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/constant/AuthConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/constant/ESCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/constant/EsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/constant/MemberConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/constant/PageConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/dto/UserDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/RRException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/utils/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/xss/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/where/library/common/xss/SQLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/resources/ValidationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-gateway/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-gateway/src/main/java/com/where/gulimall/LibraryGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-gateway/src/main/java/com/where/gulimall/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-gateway/src/test/java/com/where/gulimall/LibraryGatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-generator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-generator/src/main/java/com/where/mygenerater/MygeneraterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-generator/src/main/java/com/where/mygenerater/config/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-generator/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-generator/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-generator/src/test/java/com/where/mygenerater/MygeneraterApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/LibraryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/config/MyMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/config/MyThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/config/ThreadPoolProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookCategoryRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookLendInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookSkuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookSpuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/controller/BookWriterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dao/BookCategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dao/BookCategoryRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dao/BookLendInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dao/BookSkuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dao/BookSpuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dao/BookWriterDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dto/BookDetailDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/dto/BookUserDetailDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/entity/BookCategoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/entity/BookCategoryRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/entity/BookLendInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/entity/BookSkuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/entity/BookSpuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/entity/BookWriterEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/entity/es/ESBookEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/feign/SearchFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/interceptor/UserTokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookCategoryRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookLendInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookSkuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookSpuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/BookWriterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookCategoryRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookLendInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookManagerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookSkuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookSpuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/java/com/where/library/book/service/impl/BookWriterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/mapper/library/BookCategoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/mapper/library/BookCategoryRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/mapper/library/BookLendInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/mapper/library/BookSkuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/mapper/library/BookSpuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/mapper/library/BookWriterDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookcategory-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookcategory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookcategoryrelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookcategoryrelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/booklendinfo-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/booklendinfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/booksku-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/booksku.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookspu-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookspu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookwriter-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/main/resources/src/views/modules/library/bookwriter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-library/src/test/java/com/where/library/LibraryApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/BookMemberApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/config/MySessionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/config/MyThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/config/MyWebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/config/ThreadPoolProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/DepartmentMajorRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/MenuPermissionRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/RoleMenuRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/TestSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/UserCollectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/UserDepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/UserMajorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/UserRoleRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/DepartmentMajorRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/MenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/MenuPermissionRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/PermissionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/RoleMenuRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/UserCollectionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/UserDepartmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/UserMajorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dao/UserRoleRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dto/BookUserDetailDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dto/DepartmentMajorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dto/MenuChildDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dto/RoleMenuRelationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/dto/UserRoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/DepartmentMajorRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/MenuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/MenuPermissionRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/PermissionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/RoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/RoleMenuRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/UserCollectionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/UserDepartmentEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/UserMajorEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/UserRoleRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/entity/UserTokenInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/feign/BookAuthFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/feign/BookFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/interceptor/OpenFeignInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/interceptor/UserTokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/DepartmentMajorRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/MenuPermissionRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/RoleMenuRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/UserCollectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/UserDepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/UserMajorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/UserRoleRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/DepartmentMajorRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/MenuPermissionRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/RoleMenuRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/UserCollectionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/UserDepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/UserMajorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/UserRoleRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/DepartmentMajorRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/MenuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/MenuPermissionRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/PermissionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/RoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/RoleMenuRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/UserCollectionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/UserDepartmentDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/UserMajorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/mapper/member/UserRoleRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/departmentmajorrelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/departmentmajorrelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/menu-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/role-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/role.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/rolemenurelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/rolemenurelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/user-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/user.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/userdepartment-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/userdepartment.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/usermajor-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/usermajor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/userrolerelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/main/resources/src/views/modules/member/userrolerelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-member/src/test/java/com/where/library/member/BookMemberApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/BookSearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/config/MyElasticSearchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/controller/BookSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/dto/BookDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/dto/SearchParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/entity/ESBookEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/service/BookSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/java/com/where/library/elastic/service/impl/BookSearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-search/src/test/java/com/where/library/BookSearchApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/src/main/java/com/where/library/test/BookTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/src/main/java/com/where/library/test/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/src/main/java/com/where/library/test/config/MySessionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/src/main/java/com/where/library/test/session/TestSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-test/src/test/java/com/where/library/test/BookTestApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document/sql/library.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\apache-maven-3.6.3\repo" />
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Hg1oro3Qu5cVMQkoMIZbVGRWbS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/document" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="service.view.auto.scroll.to.source" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.where.library.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Desktop\homework\数据库\实验四\library\document" />
+      <recent name="C:\Users\LENOVO\Desktop\homework\数据库\实验四\library\book-member\src\main\java\com\where\library\member\config" />
+      <recent name="C:\Users\LENOVO\Desktop\homework\数据库\实验四\library\book-member\src\main\resources\mapper\member" />
+      <recent name="C:\Users\LENOVO\Desktop\homework\数据库\实验四\library\book-member\src\main\java\com\where\library\member\service\impl" />
+      <recent name="C:\Users\LENOVO\Desktop\homework\数据库\实验四\library\book-member\src\main\java\com\where\library\member\service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.where.library" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.where.library.auth.entity" />
+      <recent name="com.where.library.book.config" />
+      <recent name="com.where.library.member.config" />
+      <recent name="com.where.library.book.interceptor" />
+      <recent name="com.where.library.common.dto" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.where.library.common.utils.DateUtils" />
+      <module name="library-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.where.library.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.where.library.common.utils.JwtUtil" />
+      <module name="library-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.where.library.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.where.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.where.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.where.auth.AuthApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookMemberApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book-member" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.where.library.member.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.where.library.member" />
+      <option name="MAIN_CLASS_NAME" value="com.where.library.member.BookMemberApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where.library.auth.AuthApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookMemberApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book-member" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where.library.member.BookMemberApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where.library.elastic.BookSearchApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where.library.test.BookTestApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book-library" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where.library.book.LibraryApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryGatewayApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where.gulimall.LibraryGatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MygeneraterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mygenerater" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.where.mygenerater.MygeneraterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JwtUtil" />
+      <item itemvalue="Application.DateUtils" />
+      <item itemvalue="JUnit.AuthApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.BookMemberApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.BookSearchApplication" />
+      <item itemvalue="Spring Boot.BookTestApplication" />
+      <item itemvalue="Spring Boot.BookMemberApplication" />
+      <item itemvalue="Spring Boot.LibraryApplication" />
+      <item itemvalue="Spring Boot.LibraryGatewayApplication " />
+      <item itemvalue="Spring Boot.MygeneraterApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DateUtils" />
+        <item itemvalue="Application.JwtUtil" />
+        <item itemvalue="JUnit.BookMemberApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.AuthApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abe1e677-b9a6-4241-b213-afbef19719d9" name="Changes" comment="" />
+      <created>1668692091649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668692091649</updated>
+      <workItem from="1668692093488" duration="1165000" />
+      <workItem from="1668751289428" duration="967000" />
+      <workItem from="1668766859608" duration="71000" />
+      <workItem from="1668767117378" duration="104000" />
+      <workItem from="1668857713781" duration="6976000" />
+      <workItem from="1669014970860" duration="613000" />
+      <workItem from="1669018512294" duration="2593000" />
+      <workItem from="1669095646125" duration="330000" />
+      <workItem from="1669095997572" duration="7411000" />
+      <workItem from="1669188414255" duration="2885000" />
+      <workItem from="1669197932906" duration="7415000" />
+      <workItem from="1669271835900" duration="26630000" />
+      <workItem from="1669375098740" duration="21649000" />
+      <workItem from="1669514699915" duration="879000" />
+      <workItem from="1669529404687" duration="14146000" />
+      <workItem from="1669550601713" duration="1113000" />
+      <workItem from="1669551741828" duration="1592000" />
+      <workItem from="1669554925741" duration="1574000" />
+      <workItem from="1669615816654" duration="13537000" />
+      <workItem from="1669633250885" duration="3201000" />
+      <workItem from="1669636744000" duration="14969000" />
+      <workItem from="1669798571335" duration="1386000" />
+      <workItem from="1669811336235" duration="9282000" />
+      <workItem from="1669855038308" duration="8693000" />
+      <workItem from="1669877006545" duration="11324000" />
+      <workItem from="1669944314154" duration="16121000" />
+      <workItem from="1669974163786" duration="1283000" />
+      <workItem from="1669980334527" duration="8472000" />
+      <workItem from="1670030132804" duration="13573000" />
+      <workItem from="1670201079820" duration="37761000" />
+      <workItem from="1670288846491" duration="17826000" />
+      <workItem from="1670330916951" duration="36862000" />
+      <workItem from="1670458810645" duration="3780000" />
+      <workItem from="1670480066912" duration="18108000" />
+      <workItem from="1670546992282" duration="25116000" />
+      <workItem from="1670633787087" duration="6122000" />
+      <workItem from="1670640123755" duration="6075000" />
+      <workItem from="1670723074388" duration="7380000" />
+      <workItem from="1670894980571" duration="8639000" />
+      <workItem from="1671001496902" duration="7515000" />
+      <workItem from="1671016782905" duration="4362000" />
+      <workItem from="1671763092783" duration="48000" />
+      <workItem from="1678261678061" duration="3356000" />
+      <workItem from="1678508781795" duration="1118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/book-member/src/main/java/com/where/library/member/controller/UserRoleRelationController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/book-auth-security/src/main/java/com/where/library/auth/service/impl/LoginServiceImpl.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest" memberName="request" />
+        <PinnedItemInfo parentTag="org.springframework.security.web.firewall.StrictHttpFirewall$1" memberName="request" />
+        <PinnedItemInfo parentTag="java.lang.reflect.Method" memberName="name" />
+        <PinnedItemInfo parentTag="feign.Target$HardCodedTarget" memberName="type" />
+        <PinnedItemInfo parentTag="org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper" memberName="response" />
+        <PinnedItemInfo parentTag="com.where.library.common.utils.PageUtils" memberName="list" />
+        <PinnedItemInfo parentTag="org.springframework.data.elasticsearch.core.mapping.IndexCoordinates" memberName="indexNames" />
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+        <PinnedItemInfo parentTag="org.elasticsearch.client.indices.CreateIndexRequest" memberName="mappings" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/library$BookMemberApplication.ic" NAME="BookMemberApplication Coverage Results" MODIFIED="1669814516804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

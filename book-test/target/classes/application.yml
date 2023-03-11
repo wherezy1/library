@@ -1,0 +1,28 @@
+server:
+  port: 11000
+
+
+spring:
+  application:
+    name: book-test
+  datasource:
+    url: jdbc:mysql://localhost:3306/homework?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  # nacos地址配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+  session:
+    store-type: redis
+
+  redis:
+    host: localhost
+    port: 6379
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml

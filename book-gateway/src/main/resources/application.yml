@@ -1,0 +1,99 @@
+server:
+  port: 9000
+
+#actuator
+
+# 应用名称
+spring:
+  application:
+    name: book-gateway
+
+  ## spring alibaba nacos discovery 配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+
+    # gataway 路由route配置
+
+    ## 数据库连接配置
+    gateway:
+      routes:
+        - id: member
+          uri: lb://book-member
+          predicates:
+            - Host=library.com
+        - id: book-auth
+          uri: lb://book-auth
+          predicates:
+            - Host=auth.library.com
+
+        - id: book-library
+          uri: lb://book
+          predicates:
+            - Host=book.library.com
+        - id: book-search
+          uri: lb://book-search
+          predicates:
+            - Host=search.library.com
+
+        ## 从上到下优先匹配原则
+        ## 网页功能地址
+#        - id: product_route
+#          uri: lb://gulimall-product
+#          predicates:
+#            - Path=/api/product/**
+#          filters:
+#            - RewritePath=/api/(?<segment>.*),/$\{segment}
+#
+#        - id: search_route
+#          uri: lb://gulimall-search
+#          predicates:
+#            - Path=/api/search/**,/hello
+#          filters:
+#            - RewritePath=/api/(?<segment>.*),/$\{segment
+#
+#        - id: coupon_route
+#          uri: lb://gulimall-coupon
+#          predicates:
+#            - Path=/api/coupon/**
+#          filter:
+#            - RewritePath=/api/(?<segment>.*), /$\{segment}
+#
+#
+#        # 匹配 路径 /api/** 按照重写规则修改请求路径  == 注意跨域请求
+#        # 负载均衡lb 到 renren-fast
+#        - id: renren
+#          uri: lb://renren-fast
+#          predicates:
+#            - Path=/api/**
+#          filter:
+#            - RewritePath=/api/(?<segment>.*), /renren-fast/$\{segment}
+#          ## http://localhost:88/api/captcha.jpg ==> http://localhost:8080/renren-fast/captcha.jpg
+#
+#        ## nginx -> 路由host -> 微服务地址
+#        - id: gulimall_host_rounte
+#          uri: lb://gulimall-product
+#          predicates:
+#            - Host=gulimall.com, item.guliaml.com # 请求头带host
+#
+#        - id: gulimall_search_rounte
+#          uri: lb://gulimall-search
+#          predicates:
+#            - Host=search.gulimall.com    # 请求头带host
+
+#          - id: gulimall_auth_rounte
+#            uri: lb://gulimall-search
+#            predicates:
+#              - Host=search.gulimall.com
+
+
+#  http://localhost:9000/actuator/gateway/routes
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway

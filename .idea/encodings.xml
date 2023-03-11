@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/book-auth-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-auth-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-library/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-library/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-member/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-search/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/library-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/library-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/library-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/library-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mygenerater/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mygenerater/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mylibrary/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mylibrary/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

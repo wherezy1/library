@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/book-auth-security/auth.iml" filepath="$PROJECT_DIR$/book-auth-security/auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-common/book-common.iml" filepath="$PROJECT_DIR$/book-common/book-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-gateway/book-gateway.iml" filepath="$PROJECT_DIR$/book-gateway/book-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-library/book-library.iml" filepath="$PROJECT_DIR$/book-library/book-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-member/book-member.iml" filepath="$PROJECT_DIR$/book-member/book-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-search/book-search.iml" filepath="$PROJECT_DIR$/book-search/book-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-test/book-test.iml" filepath="$PROJECT_DIR$/book-test/book-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library.iml" filepath="$PROJECT_DIR$/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-common/library-common.iml" filepath="$PROJECT_DIR$/library-common/library-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-gateway/library-gateway.iml" filepath="$PROJECT_DIR$/library-gateway/library-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-generator/mygenerater.iml" filepath="$PROJECT_DIR$/book-generator/mygenerater.iml" />
+    </modules>
+  </component>
+</project>

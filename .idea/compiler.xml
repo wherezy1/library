@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mygenerater" />
+        <module name="library-gateway" />
+        <module name="auth" />
+        <module name="book-member" />
+        <module name="library-common" />
+        <module name="book-test" />
+        <module name="book-common" />
+        <module name="book-gateway" />
+        <module name="book-library" />
+        <module name="book-search" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth" target="1.8" />
+      <module name="book-common" target="1.8" />
+      <module name="book-gateway" target="1.8" />
+      <module name="book-library" target="1.8" />
+      <module name="book-member" target="1.8" />
+      <module name="book-search" target="1.8" />
+      <module name="book-test" target="1.8" />
+      <module name="library" target="1.8" />
+      <module name="library-common" target="1.8" />
+      <module name="library-gateway" target="1.8" />
+      <module name="mygenerater" target="1.8" />
+      <module name="mylibrary" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth" options="" />
+      <module name="book-member" options="" />
+      <module name="book-test" options="-parameters" />
+      <module name="library-common" options="" />
+    </option>
+  </component>
+</project>

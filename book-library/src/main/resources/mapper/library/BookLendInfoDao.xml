@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.where.library.book.dao.BookLendInfoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.where.library.book.entity.BookLendInfoEntity" id="bookLendInfoMap">
+        <result property="id" column="id"/>
+        <result property="bookId" column="book_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="lendTime" column="lend_time"/>
+        <result property="returnTime" column="return_time"/>
+    </resultMap>
+
+
+</mapper>

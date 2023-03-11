@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.where.library.member.dao.UserCollectionDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.where.library.member.entity.UserCollectionEntity" id="userCollectionMap">
+        <result property="userId" column="user_id"/>
+        <result property="bookId" column="book_id"/>
+    </resultMap>
+    <select id="getBookIdList" resultType="java.lang.Long">
+        select `book_id` from `ums_user_collection`
+        where `user_id` = #{userId}
+            limit #{pageNum}, #{pageSize}
+    </select>
+
+
+</mapper>

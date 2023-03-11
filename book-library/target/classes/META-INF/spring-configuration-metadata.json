@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "library.thread",
+      "type": "com.where.library.book.config.ThreadPoolProperties",
+      "sourceType": "com.where.library.book.config.ThreadPoolProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "library.thread.core",
+      "type": "java.lang.Integer",
+      "sourceType": "com.where.library.book.config.ThreadPoolProperties"
+    },
+    {
+      "name": "library.thread.keep-alive-time",
+      "type": "java.lang.Integer",
+      "sourceType": "com.where.library.book.config.ThreadPoolProperties"
+    },
+    {
+      "name": "library.thread.max-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.where.library.book.config.ThreadPoolProperties"
+    }
+  ],
+  "hints": []
+}

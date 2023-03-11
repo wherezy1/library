@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.where.library.auth.dao.UserDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.where.library.auth.entity.UserEntity" id="userMap">
+        <result property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="majorId" column="major_id"/>
+        <result property="classNumber" column="class_number"/>
+        <result property="sex" column="sex"/>
+        <result property="telephone" column="telephone"/>
+        <result property="remain" column="remain"/>
+        <result property="image" column="image" />
+
+        <result property="departmentId" column="department_id"/>
+        <result property="department" column="department"/>
+        <result property="major" column="major"/>
+        <result property="status" column="status"/>
+    </resultMap>
+    <select id="getUserDetail" resultType="com.where.library.auth.entity.UserEntity">
+        select uu.*,
+               uum.major,
+               uud.id department_id,
+               uud.department
+        from ums_user uu
+                 left join ums_user_major uum on uum.id = uu.major_id
+                 left join ums_department_major_relation udmr on udmr.major_id = uu.major_id
+                 left join ums_user_department uud on uud.id = udmr.department_id
+        where uu.id = #{userId}
+            and uu.status = 0
+    </select>
+    <select id="selectPermsByUserId" resultType="java.lang.String">
+        SELECT
+            DISTINCT up.`permission`
+        FROM
+            ums_user_role_relation ur
+                LEFT JOIN `ums_role` r ON ur.`role_id` = r.`id`
+                LEFT JOIN `ums_role_menu_relation` rm ON ur.`role_id` = rm.`role_id`
+                LEFT JOIN `ums_menu` m ON m.`id` = rm.`menu_id`
+                left join `ums_menu_permission_relation` umpr on umpr.menu_id = m.id
+                left join `ums_permission` up on up.id = umpr.permission_id
+        WHERE
+            user_id = #{userId}
+          AND r.`status` = 0
+          AND m.`status` = 0
+    </select>
+
+</mapper>

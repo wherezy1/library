@@ -1,0 +1,45 @@
+server:
+  port: 13000
+
+spring:
+  application:
+    name: book-member
+  datasource:
+    url: jdbc:mysql://localhost:3306/homework?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  # nacos地址配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  session:
+    store-type: redis
+
+  redis:
+    host: localhost
+    port: 6379
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+
+#设置feign客户端超时时间（OpenFeign默认支持ribbon）
+ribbon:
+  #指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的实际
+  ReadTimeout: 5000
+  #指的是建立连接后从服务器读取到可用资源所用的时间
+  ConnectTimeout: 5000
+
+
+# 线程池
+library:
+  thread:
+    core: 8
+    max-size: 10
+    keep-alive-time: 10000

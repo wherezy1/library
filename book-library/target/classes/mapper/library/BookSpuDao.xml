@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.where.library.book.dao.BookSpuDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.where.library.book.entity.BookSpuEntity" id="bookSpuMap">
+        <result property="id" column="id"/>
+        <result property="bookName" column="book_name"/>
+        <result property="writerId" column="writer_id"/>
+        <result property="publisher" column="publisher"/>
+        <result property="inputTime" column="input_time"/>
+        <result property="describe" column="describe"/>
+        <result property="image" column="image"/>
+        <result property="status" column="status"/>
+    </resultMap>
+    <resultMap id="bookDetailDto" type="com.where.library.book.dto.BookDetailDto">
+        <result property="id" column="id"/>
+        <result property="bookName" column="book_name"/>
+        <result property="writerId" column="writer_id"/>
+        <result property="publisher" column="publisher"/>
+        <result property="inputTime" column="input_time"/>
+        <result property="describe" column="describe"/>
+        <result property="image" column="image"/>
+        <result property="status" column="status"/>
+        <result property="writer" column="writer"/>
+        <result property="skuId" column="sku_id"/>
+        <result property="stock" column="stock"/>
+        <result property="categoryId" column="category_id"/>
+        <result property="category" column="category"/>
+    </resultMap>
+    <resultMap id="bookUserDetailDto" type="com.where.library.book.dto.BookUserDetailDto">
+        <result property="id" column="id"/>
+        <result property="bookName" column="book_name"/>
+        <result property="writerId" column="writer_id"/>
+        <result property="publisher" column="publisher"/>
+        <result property="describe" column="describe"/>
+        <result property="image" column="image"/>
+        <result property="writer" column="writer"/>
+        <result property="categoryId" column="category_id"/>
+        <result property="category" column="category"/>
+        <result property="hasStock" column="has_stock"/>
+    </resultMap>
+
+    <!--查询所有-->
+    <select id="getAllBookDetail" resultType="com.where.library.book.dto.BookDetailDto">
+        select distinct bbs.id,
+                        bbs.`book_name`,
+                        bbs.`writer_id`,
+                        bbs.`publisher`,
+                        bbs.`input_time`,
+                        bbs.`describe`,
+                        bbs.`image`,
+                        bbs.`status`,
+                        bbw.writer,
+                        bbk.id sku_id,
+                        bbk.stock,
+                        bbc.id category_id,
+                        bbc.category
+        from bms_book_spu bbs
+                 left join bms_book_writer bbw on bbw.id = bbs.writer_id
+                 left join bms_book_sku bbk on bbk.book_id = bbs.id
+                 left join bms_book_category_relation bbcr on bbcr.book_id = bbs.id
+                 left join bms_book_category bbc on bbc.id = bbcr.category_id
+        limit #{pageNum}, #{pageSize}
+    </select>
+    <!--通过id查询-->
+    <select id="getBookDetailById" resultType="com.where.library.book.dto.BookDetailDto">
+        select distinct bbs.id,
+                        bbs.`book_name`,
+                        bbs.`writer_id`,
+                        bbs.`publisher`,
+                        bbs.`input_time`,
+                        bbs.`describe`,
+                        bbs.`image`,
+                        bbs.`status`,
+                        bbw.writer,
+                        bbk.id sku_id,
+                        bbk.stock,
+                        bbc.id category_id,
+                        bbc.category
+        from bms_book_spu bbs
+                 left join bms_book_writer bbw on bbw.id = bbs.writer_id
+                 left join bms_book_sku bbk on bbk.book_id = bbs.id
+                 left join bms_book_category_relation bbcr on bbcr.book_id = bbs.id
+                 left join bms_book_category bbc on bbc.id = bbcr.category_id
+            where bbs.id = #{id}
+    </select>
+
+    <select id="getUserBookDetailAll" resultType="com.where.library.book.dto.BookUserDetailDto">
+        select distinct bbs.id,
+                        bbs.`book_name`,
+                        bbs.`writer_id`,
+                        bbs.`publisher`,
+                        bbs.`describe`,
+                        bbs.`image`,
+                        bbw.writer,
+                        bbc.id category_id,
+                        bbc.category,
+                        bbk.stock > 0 has_stock
+        from bms_book_spu bbs
+                 left join bms_book_writer bbw on bbw.id = bbs.writer_id
+                 left join bms_book_sku bbk on bbk.book_id = bbs.id
+                 left join bms_book_category_relation bbcr on bbcr.book_id = bbs.id
+                 left join bms_book_category bbc on bbc.id = bbcr.category_id
+        where bbs.`status` = 1
+            limit #{pageNum}, #{pageSize}
+    </select>
+
+
+</mapper>
