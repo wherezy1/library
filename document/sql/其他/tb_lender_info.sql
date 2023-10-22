@@ -1,0 +1,111 @@
+{"dbName":"homework","tableName":"tb_lender_info","tableComment":"借阅信息","mockNum":100,"fieldList":[{"fieldName":"lender_id","comment":"借阅人id","fieldType":"bigint","mockType":"规则","mockParams":"([1-9]|[1-9]\\d|100)","notNull":true,"primaryKey":false,"autoIncrement":false},{"fieldName":"book_id","comment":"借阅书籍id","fieldType":"bigint","mockType":"规则","mockParams":"([1-9]|[1-9]\\d|100)","notNull":true,"primaryKey":false,"autoIncrement":false},{"fieldName":"lend_data","comment":"借阅日期","fieldType":"varchar(64)","mockType":"随机","mockParams":"日期","notNull":true,"primaryKey":false,"autoIncrement":false},{"fieldName":"return_data","comment":"归还日期","fieldType":"varchar(64)","mockType":"随机","mockParams":"日期","notNull":true,"primaryKey":false,"autoIncrement":false}]}v
+
+-- 借阅信息
+create table if not exists homework.`tb_lender_info`
+(
+`lender_id` bigint not null comment '借阅人id',
+`book_id` bigint not null comment '借阅书籍id',
+`lend_data` varchar(64) not null comment '借阅日期',
+`return_data` varchar(64) not null comment '归还日期'
+) comment '借阅信息';
+
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (59, 1, '2022-10-27 00:47:52', '2022-04-23 18:33:21');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 12, '2022-06-16 23:14:41', '2022-04-07 11:25:14');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (3, 58, '2022-06-24 18:43:16', '2022-12-28 17:20:59');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (100, 1, '2022-02-11 06:35:42', '2022-03-07 01:30:29');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (60, 1, '2022-02-11 23:53:59', '2022-06-08 02:02:57');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (12, 39, '2022-08-25 10:27:42', '2022-10-10 13:10:00');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (4, 5, '2022-08-02 16:06:44', '2022-03-06 08:45:32');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (54, 13, '2022-09-19 00:59:15', '2022-08-18 05:05:59');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (100, 4, '2022-05-13 15:46:10', '2022-04-04 19:27:41');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (100, 13, '2022-05-08 04:45:43', '2022-05-22 00:35:46');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (99, 1, '2022-05-12 19:38:08', '2022-11-19 06:05:19');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 67, '2022-07-30 20:29:34', '2022-09-27 10:04:01');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (14, 35, '2022-03-04 04:12:34', '2022-10-16 10:43:32');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 100, '2022-01-17 09:47:16', '2022-11-06 12:20:30');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 87, '2022-04-27 14:21:02', '2022-09-03 19:54:02');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (13, 4, '2022-02-04 16:59:09', '2022-05-14 23:46:30');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (4, 1, '2022-01-30 20:43:29', '2022-05-10 02:51:16');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (10, 20, '2022-08-06 00:13:52', '2022-04-05 09:29:38');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 26, '2022-12-02 18:59:03', '2022-08-22 03:35:57');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (10, 11, '2022-10-14 05:04:18', '2022-03-25 17:07:19');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (65, 1, '2022-09-16 08:47:55', '2022-07-13 05:38:46');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (6, 100, '2022-09-14 07:39:31', '2022-06-03 22:52:13');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (9, 100, '2022-08-02 07:03:41', '2022-06-30 05:14:46');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (55, 5, '2022-01-31 19:15:22', '2022-03-09 17:35:13');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (10, 3, '2022-12-01 06:58:41', '2022-07-21 10:40:22');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (6, 100, '2022-01-31 01:25:32', '2022-10-07 03:40:59');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 100, '2022-11-24 12:48:22', '2022-10-21 21:48:09');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (3, 7, '2022-06-17 00:00:54', '2022-12-12 18:20:15');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (5, 1, '2022-01-16 19:26:07', '2022-06-29 15:31:01');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (3, 67, '2022-07-26 11:36:30', '2022-12-24 07:07:03');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (15, 1, '2022-06-07 04:47:53', '2022-03-03 15:18:47');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 8, '2022-07-23 09:31:57', '2022-11-04 21:00:29');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (69, 100, '2022-05-01 17:36:14', '2022-02-03 14:26:25');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (9, 1, '2022-06-02 21:39:25', '2022-03-19 08:52:43');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (27, 5, '2022-06-13 17:37:19', '2022-09-11 17:50:24');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (19, 17, '2022-03-23 12:36:21', '2022-01-24 09:20:52');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (70, 1, '2022-06-03 01:23:09', '2022-03-02 17:51:12');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (63, 59, '2022-08-19 17:28:37', '2022-12-04 14:09:43');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (4, 60, '2022-09-23 06:30:21', '2022-07-12 20:21:38');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (6, 2, '2022-05-30 04:48:55', '2022-05-30 02:17:13');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (18, 53, '2022-05-06 08:59:35', '2022-01-29 14:29:39');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (3, 9, '2022-07-01 17:10:10', '2022-10-21 07:36:28');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (5, 33, '2022-12-22 19:46:28', '2022-05-01 21:43:41');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (3, 10, '2022-04-11 15:26:08', '2022-10-18 14:59:13');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (9, 1, '2022-05-07 14:14:24', '2022-12-26 12:56:41');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 1, '2022-06-02 13:54:22', '2022-05-01 08:21:41');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (50, 15, '2022-02-26 16:10:39', '2022-01-01 07:25:12');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (65, 95, '2022-10-01 16:43:52', '2022-02-17 17:29:53');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (100, 66, '2022-09-13 01:33:59', '2022-10-04 08:30:51');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (84, 8, '2022-09-15 10:51:09', '2022-05-01 14:12:11');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (8, 45, '2022-01-15 00:32:10', '2022-02-11 21:30:25');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (21, 100, '2022-06-12 21:22:35', '2022-04-17 20:14:32');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 10, '2022-08-01 05:03:44', '2022-06-20 17:27:37');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (7, 18, '2022-05-26 23:25:42', '2022-06-17 02:15:19');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (19, 6, '2022-05-01 09:34:13', '2022-02-02 04:14:29');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (100, 11, '2022-05-18 14:25:35', '2022-05-17 14:40:49');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (82, 45, '2022-09-27 19:31:13', '2022-04-08 02:41:52');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (4, 1, '2022-05-31 12:43:47', '2022-12-13 05:37:06');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (4, 10, '2022-03-17 11:00:38', '2022-07-06 13:27:52');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 1, '2022-05-03 03:27:47', '2022-02-19 01:39:25');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (55, 23, '2022-01-26 16:55:02', '2022-03-22 02:17:01');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (2, 2, '2022-06-11 23:37:37', '2022-10-11 14:58:32');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (16, 63, '2022-11-16 11:03:44', '2022-06-06 23:15:07');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (74, 8, '2022-08-28 13:41:23', '2022-04-04 17:53:51');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (33, 83, '2022-03-20 17:13:25', '2022-07-03 16:58:14');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (10, 27, '2022-02-25 18:42:55', '2022-06-20 11:55:03');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 22, '2022-05-25 19:07:12', '2022-12-22 07:23:58');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (58, 1, '2022-02-25 21:36:16', '2022-06-17 00:44:30');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (10, 100, '2022-07-10 18:15:21', '2022-06-30 04:51:16');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (10, 1, '2022-05-06 01:10:34', '2022-11-14 07:33:22');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (11, 1, '2022-06-29 06:37:24', '2022-01-22 14:58:01');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (2, 1, '2022-04-19 06:45:15', '2022-05-21 07:37:57');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (16, 20, '2022-09-01 19:36:20', '2022-06-26 19:47:33');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (26, 17, '2022-08-16 19:29:25', '2022-06-07 21:54:09');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (6, 33, '2022-11-19 01:49:06', '2022-03-27 17:15:27');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (98, 23, '2022-11-06 23:36:52', '2022-02-13 15:26:12');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (11, 2, '2022-07-05 00:47:21', '2022-01-22 21:16:37');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (37, 47, '2022-12-13 08:17:35', '2022-03-31 20:47:00');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (100, 65, '2022-07-21 11:28:36', '2022-05-11 09:33:09');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (14, 61, '2022-11-02 18:55:08', '2022-02-05 10:59:54');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (70, 3, '2022-05-25 21:31:07', '2022-01-23 22:08:45');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (100, 1, '2022-01-18 12:07:21', '2022-12-26 11:09:42');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (8, 16, '2022-12-07 23:33:21', '2022-06-09 05:13:48');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 6, '2022-09-29 16:00:41', '2022-11-08 00:13:59');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (3, 78, '2022-12-25 18:37:30', '2022-11-16 08:53:45');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (10, 10, '2022-03-11 13:53:54', '2022-09-05 23:30:20');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (11, 11, '2022-03-10 03:57:19', '2022-11-08 13:48:22');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 55, '2022-05-06 14:15:08', '2022-08-20 08:38:25');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (64, 16, '2022-04-16 17:16:49', '2022-07-02 16:21:42');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 100, '2022-08-30 11:37:20', '2022-08-25 09:17:51');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (19, 18, '2022-03-11 18:40:41', '2022-01-15 09:09:07');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (80, 17, '2022-09-22 09:48:34', '2022-01-10 12:28:26');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (97, 1, '2022-11-27 00:24:26', '2022-07-21 08:51:06');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (9, 6, '2022-12-28 22:58:14', '2022-09-12 02:21:18');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 91, '2022-08-02 18:36:08', '2022-09-22 00:33:01');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 100, '2022-01-01 08:17:21', '2022-06-13 11:49:31');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (4, 6, '2022-04-17 02:06:06', '2022-01-06 16:44:12');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (17, 58, '2022-11-14 23:48:48', '2022-09-26 21:08:53');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (1, 1, '2022-12-07 16:51:32', '2022-10-02 09:11:24');
+insert into homework.`tb_lender_info` (`lender_id`, `book_id`, `lend_data`, `return_data`) values (11, 11, '2022-04-29 06:49:42', '2022-05-24 20:55:01');
